@@ -1,0 +1,9 @@
+<label>Username</label>
+
+<input class="form-control w-25" type="text" placeholder="Insert Username here" [(ngModel)]="username">
+
+<p>Selected Username: {{ username }}</p>
+
+<button (click)="resetUsername()" [disabled]="username === '' " class="btn btn-primary">
+    Reset User
+</button>
